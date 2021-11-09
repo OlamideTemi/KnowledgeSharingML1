@@ -20,6 +20,8 @@ import inspect
 from apps.ml.registry import MLRegistry
 from apps.ml.income_classifier.random_forest import RandomForestClassifier
 
+from apps.ml.income_classifier.extra_trees import ExtraTreesClassifier # import ExtraTrees ML algorithm
+
 try:
     registry = MLRegistry() # create ML registry
     # Random Forest classifier
