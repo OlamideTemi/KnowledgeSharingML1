@@ -5,6 +5,7 @@ from apps.ml.registry import MLRegistry
 from django.test import TestCase
 
 from apps.ml.income_classifier.random_forest import RandomForestClassifier
+from apps.ml.income_classifier.extra_trees import ExtraTreesClassifier
 
 class MLTests(TestCase):
     def test_rf_algorithm(self):
@@ -52,12 +53,12 @@ class MLTests(TestCase):
 
 # in file backend/server/apps/ml/tests.py
 # add new import
-from apps.ml.income_classifier.extra_trees import ExtraTreesClassifier
+#from apps.ml.income_classifier.extra_trees import ExtraTreesClassifier
 
 # ... the rest of the code
 
 # add new test method to MLTests class
-def test_et_algorithm(self):
+    def test_et_algorithm(self):
         input_data = {
             "age": 37,
             "workclass": "Private",
